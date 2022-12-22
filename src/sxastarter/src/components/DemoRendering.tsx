@@ -3,7 +3,7 @@ import { Field, Text } from '@sitecore-jss/sitecore-jss-nextjs';
 
 interface Fields {
   SomeText: Field<string>;
-} 
+}
 
 type DemoRenderingProps = {
   params: { [key: string]: string };
