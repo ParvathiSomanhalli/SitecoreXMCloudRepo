@@ -5,7 +5,7 @@ interface Fields {
   SomeText: Field<string>;
 }
 
-type DemoRenderingProps = {
+export type DemoRenderingProps = {
   params: { [key: string]: string };
   fields: Fields;
 };
@@ -15,7 +15,7 @@ export const Default = (props: DemoRenderingProps): JSX.Element => {
     <div className={`component demorendering ${props.params.styles}`}>
       <div className="component-content">
     <div>
-          <Text field={props.fields.SomeText} />
+       <Text field={props.fields.SomeText} />
     </div>
     </div>
     </div>
